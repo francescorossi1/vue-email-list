@@ -9,7 +9,7 @@
     <title>Vue Email List</title>
 </head>
 <body>
-    <div id="root">
+    <div id="root" v-if="emails.length === 10">
         <h2>Elenco di email:</h2>
         <ul>
             <li v-for="email in emails">{{ email }}</li>
